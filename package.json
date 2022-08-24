@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mauriil/arduino-joystick#readme",
   "dependencies": {
+    "mqtt": "^4.3.7",
     "nodemon": "^2.0.19",
     "serialport": "^10.4.0"
   }
