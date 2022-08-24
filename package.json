@@ -1,0 +1,27 @@
+{
+  "name": "arduino-joystick",
+  "version": "1.0.0",
+  "description": "Control arduino board as a RC transmitter over MQTT",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriil/arduino-joystick.git"
+  },
+  "keywords": [
+    "ARJ"
+  ],
+  "author": "Lahitte, Mauricio Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriil/arduino-joystick/issues"
+  },
+  "homepage": "https://github.com/mauriil/arduino-joystick#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "serialport": "^10.4.0"
+  }
+}
