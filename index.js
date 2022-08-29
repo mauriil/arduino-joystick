@@ -36,19 +36,19 @@ client.on("connect", function () {
     const [VRx_1, VRy_1, VRx_2, VRy_2, VRx_3, VRy_3, POT_1, POT_2, POT_3, POT_4, toggle_1, toggle_2, toggle_3, toggle_4, toggle_5, toggle_6, toggle_7, toggle_8, toggle_9 ] = data.split("|");
     
     if (VRx_1 != lastVRx_1) {
-      client.publish('/FELIA/ROLL', VRx_1);
+      client.publish('/FELIA/YAW', VRx_1);
       lastVRx_1 = VRx_1;
     }
     if (VRy_1 != lastVRy_1) {
-      client.publish('/FELIA/YAW', VRy_1);
+      client.publish('/FELIA/ROLL', VRy_1);
       lastVRy_1 = VRy_1;
     }
     if (VRx_2 != lastVRx_2) {
-      client.publish('/FELIA/RUDDER', VRx_2);
+      client.publish('/FELIA/VRx_2', VRx_2);
       lastVRx_2 = VRx_2;
     }
     if (VRy_2 != lastVRy_2) {
-      client.publish('/FELIA/VRy_2', VRy_2);
+      client.publish('/FELIA/RUDDER', VRy_2);
       lastVRy_2 = VRy_2;
     }
     if (VRx_3 != lastVRx_3) {
