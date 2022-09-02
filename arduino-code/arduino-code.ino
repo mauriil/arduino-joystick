@@ -8,7 +8,7 @@ int VRy_3 = A5;
 int POT_1 = A6;
 int POT_2 = A7;
 int POT_3 = A8;
-int POT_4 = A8;
+int POT_4 = A9;
 
 int toggle_1 = 2;
 int toggle_2 = 3;
@@ -49,7 +49,7 @@ void setup() {
 void loop() {  
   Serial.print(map(analogRead(VRx_1), 0, 1023, 0, 180));
   Serial.print("|");
-  Serial.print(map(analogRead(VRy_1), 0, 1023, 0, 180));
+  Serial.print(map(analogRead(VRy_1), 0, 1023, 30, 150));
   Serial.print("|");
   Serial.print(map(analogRead(VRx_2), 0, 1023, 0, 180));
   Serial.print("|");
@@ -59,40 +59,40 @@ void loop() {
   Serial.print("|");
   Serial.print(map(analogRead(VRy_3), 0, 1023, 0, 180));
   Serial.print("|");
-  Serial.print(map(analogRead(POT_1), 0, 678, 0, 180));  
+  Serial.print(map(analogRead(POT_1), 0, 1023, 0, 180));  
   Serial.print("|");
-  Serial.print(map(analogRead(POT_2), 0, 670, 0, 180));  
+  Serial.print(map(analogRead(POT_2), 0, 1023, 0, 180));  
   Serial.print("|");
-  Serial.print(map(analogRead(POT_3), 0, 650, 0, 180));  
+  Serial.print(map(analogRead(POT_3), 0, 1023, 0, 180));  
   Serial.print("|");
-  Serial.print(map(analogRead(POT_4), 0, 115, 0, 180));  
+  Serial.print(map(analogRead(POT_4), 0, 1023, 0, 180));  
   Serial.print("|");
-  if(digitalRead(toggle_1) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_1) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_2) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_2) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_3) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_3) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_4) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_4) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_5) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_5) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_6) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_6) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_7) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_7) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_8) == HIGH){ Serial.print("1");    
-  } else { Serial.print("0");}
+  if(digitalRead(toggle_8) == HIGH){ Serial.print("0");    
+  } else { Serial.print("1");}
   Serial.print("|");
-  if(digitalRead(toggle_9) == HIGH){ Serial.println("1");    
-  } else { Serial.println("0");}
+  if(digitalRead(toggle_9) == HIGH){ Serial.println("0");    
+  } else { Serial.println("1");}
 
   delay(100);
 }

@@ -75,41 +75,41 @@ client.on("connect", function () {
       client.publish('/FELIA/POT_4', POT_4);
       lastPOT_4 = POT_4;
     }
-    if (toggle_1 != lastToggle_1) {
+    if (parseInt(toggle_1) != lastToggle_1) {
       client.publish('/FELIA/toggle_1', toggle_1);
-      lastToggle_1 = toggle_1;
+      lastToggle_1 = parseInt(toggle_1);
     }
-    if (toggle_2 != lastToggle_2) {
+    if (parseInt(toggle_2) != lastToggle_2) {
       client.publish('/FELIA/toggle_2', toggle_2);
-      lastToggle_2 = toggle_2;
+      lastToggle_2 = parseInt(toggle_2);
     }
-    if (toggle_3 != lastToggle_3) {
+    if (parseInt(toggle_3) != lastToggle_3) {
       client.publish('/FELIA/toggle_3', toggle_3);
-      lastToggle_3 = toggle_1;
+      lastToggle_3 = parseInt(toggle_3);
     }
-    if (toggle_4 != lastToggle_4) {
+    if (parseInt(toggle_4) != lastToggle_4) {
       client.publish('/FELIA/toggle_4', toggle_4);
-      lastToggle_4 = toggle_4;
+      lastToggle_4 = parseInt(toggle_4);
     }
-    if (toggle_5 != lastToggle_5) {
+    if (parseInt(toggle_5) != lastToggle_5) {
       client.publish('/FELIA/toggle_5', toggle_5);
-      lastToggle_5 = toggle_5;
+      lastToggle_5 = parseInt(toggle_5);
     }
-    if (toggle_6 != lastToggle_6) {
+    if (parseInt(toggle_6) != lastToggle_6) {
       client.publish('/FELIA/toggle_6', toggle_6);
-      lastToggle_6 = toggle_6;
+      lastToggle_6 = parseInt(toggle_6);
     }
-    if (toggle_7 != lastToggle_7) {
+    if (parseInt(toggle_7) != lastToggle_7) {
       client.publish('/FELIA/toggle_7', toggle_7);
-      lastToggle_7 = toggle_7;
+      lastToggle_7 = parseInt(toggle_7);
     }
-    if (toggle_8 != lastToggle_8) {
+    if (parseInt(toggle_8) != lastToggle_8) {
       client.publish('/FELIA/toggle_8', toggle_8);
-      lastToggle_8 = toggle_8;
+      lastToggle_8 = parseInt(toggle_8);
     }
-    if (toggle_9 != lastToggle_9) {
+    if (parseInt(toggle_9) != lastToggle_9) {
       client.publish('/FELIA/toggle_9', toggle_9);
-      lastToggle_9toggle_9 = toggle_9;
+      lastToggle_9 = parseInt(toggle_9);
     }
 
   });
