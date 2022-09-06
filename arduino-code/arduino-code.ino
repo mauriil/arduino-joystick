@@ -61,7 +61,7 @@ void loop() {
   Serial.print("|");
   Serial.print(map(analogRead(POT_1), 0, 1023, 0, 180));  
   Serial.print("|");
-  Serial.print(map(analogRead(POT_2), 0, 1023, 0, 180));  
+  Serial.print(map(analogRead(POT_2), 0, 1023, 90, 180));  
   Serial.print("|");
   Serial.print(map(analogRead(POT_3), 0, 1023, 0, 180));  
   Serial.print("|");
